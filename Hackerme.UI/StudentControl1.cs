@@ -30,8 +30,8 @@ namespace Hackerme.UI
             Student.DOB = DateOnly.FromDateTime(dtpDOB.Value);
             Student.CityId = cmbCity.SelectedIndex;
 
-            if(inAddMode)
-                MyDB.StudendsTable.Add(Student);
+            //if (inAddMode)
+            MyDB.StudendsTable.Add(Student);
 
 
         }
@@ -47,8 +47,9 @@ namespace Hackerme.UI
 
             //Student = MyDB.StudendsTable.Search(txtSearchName.Text);
 
-            txtFirst.Text = Student.FirstName;
-            DateOnly.FromDateTime(dtpDOB.Value) = Student.DOB;
-            cmbCity.SelectedIndex = Student.CityId;
+            //txtFirst.Text = Student.FirstName;
+            //DateOnly.FromDateTime(dtpDOB.Value) = Student.DOB;
+            //cmbCity.SelectedIndex = Student.CityId;
         }
     }
+}

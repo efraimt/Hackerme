@@ -41,7 +41,8 @@ namespace Hackerme.UI
 
         private void redToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var control1 = new UserControl2();
+            var control1 = new StudentsListControil();
+            
             panel1.Controls.Clear();
             panel1.Controls.Add(control1);
             control1.Dock = DockStyle.Fill;
@@ -55,6 +56,15 @@ namespace Hackerme.UI
             students.Add(new Student() { Id = 2, FirstName = "Yael" });
             
             //dataGridView1.DataSource = students;
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var control1 = new StudentsListControil();
+            
+            panel1.Controls.Clear();
+            panel1.Controls.Add(control1);
+            control1.Dock = DockStyle.Fill;
         }
     }
 }
