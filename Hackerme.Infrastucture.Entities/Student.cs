@@ -15,6 +15,8 @@ namespace Hackerme.Infrastucture.Entities
         public DateOnly DOB { get; set; }
         public int CityId { get; set; }
 
+        //public List<Course> Courses { get; set; }
+
         //public DateTime Created { get; set; }
         //public DateTime Updated { get; set; }
         //public int UserCureatedId { get; set; }

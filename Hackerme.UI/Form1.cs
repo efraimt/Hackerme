@@ -22,12 +22,18 @@ namespace Hackerme.UI
 
         private void newToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //Student student = new Student();
+            StudentControl1 studentControl1= new StudentControl1();
+
+            panel1.Controls.Clear();
+            panel1.Controls.Add(studentControl1);
+            studentControl1.Dock = DockStyle.Fill;
+
+
         }
 
         private void bleToolStripMenuItem_Click(object sender, EventArgs e)
         { 
-            var control1=new  UserControl1();
+            var control1=new  StudentControl1();
             panel1.Controls.Clear();
             panel1.Controls.Add(control1);
             control1.Dock = DockStyle.Fill;
@@ -48,7 +54,7 @@ namespace Hackerme.UI
             students.Add(new Student() { Id = 1, FirstName = "Aharon" });
             students.Add(new Student() { Id = 2, FirstName = "Yael" });
             
-            dataGridView1.DataSource = students;
+            //dataGridView1.DataSource = students;
         }
     }
 }

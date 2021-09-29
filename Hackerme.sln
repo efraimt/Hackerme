@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerme.Infrastucture.Enti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hackerme.UI", "Hackerme.UI\Hackerme.UI.csproj", "{CF45F08A-DFA1-4846-8F80-85DA65FF34E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDB", "MyDB\MyDB.csproj", "{85139D91-8066-426F-824D-D608543C5B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CF45F08A-DFA1-4846-8F80-85DA65FF34E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF45F08A-DFA1-4846-8F80-85DA65FF34E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF45F08A-DFA1-4846-8F80-85DA65FF34E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85139D91-8066-426F-824D-D608543C5B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85139D91-8066-426F-824D-D608543C5B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85139D91-8066-426F-824D-D608543C5B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85139D91-8066-426F-824D-D608543C5B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

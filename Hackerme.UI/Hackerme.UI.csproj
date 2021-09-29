@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Hackerme.Infrastucture.Entities\Hackerme.Infrastucture.Entities.csproj" />
+    <ProjectReference Include="..\MyDB\MyDB.csproj" />
   </ItemGroup>
 
 </Project>

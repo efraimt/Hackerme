@@ -67,11 +67,8 @@ namespace Hackerme.UI
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -104,8 +101,8 @@ namespace Hackerme.UI
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(46, 24);
-            this.fileToolStripMenuItem1.Text = "&File";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(80, 24);
+            this.fileToolStripMenuItem1.Text = "Students";
             // 
             // newToolStripMenuItem1
             // 
@@ -191,27 +188,27 @@ namespace Hackerme.UI
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(49, 24);
-            this.editToolStripMenuItem1.Text = "&Edit";
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(74, 24);
+            this.editToolStripMenuItem1.Text = "Courses";
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.undoToolStripMenuItem.Text = "&Undo";
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
             this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.redoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.redoToolStripMenuItem.Text = "&Redo";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -219,7 +216,7 @@ namespace Hackerme.UI
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cutToolStripMenuItem.Text = "Cu&t";
             // 
             // copyToolStripMenuItem
@@ -228,7 +225,7 @@ namespace Hackerme.UI
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.copyToolStripMenuItem.Text = "&Copy";
             // 
             // pasteToolStripMenuItem
@@ -237,18 +234,18 @@ namespace Hackerme.UI
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.pasteToolStripMenuItem.Text = "&Paste";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(176, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.selectAllToolStripMenuItem.Text = "Select &All";
             // 
             // toolsToolStripMenuItem
@@ -363,23 +360,11 @@ namespace Hackerme.UI
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1002, 555);
             this.panel1.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 555);
-            this.dataGridView1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -396,8 +381,6 @@ namespace Hackerme.UI
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,7 +425,6 @@ namespace Hackerme.UI
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolStripMenuItem bleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
