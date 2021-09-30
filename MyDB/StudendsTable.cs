@@ -25,8 +25,10 @@ namespace MyDB
             Log("Added " + student.FirstName);
         }
 
+
+        /*delegate parameter exsample*/
         /// <summary>
-        /// Delete student from college
+        /// Delete student from college, log when done
         /// </summary>
         /// <param name="student"></param>
         public static void Remove(Student student, LogDelegate logParam)
