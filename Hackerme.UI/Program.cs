@@ -1,3 +1,4 @@
+using MyDB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,10 @@ namespace Hackerme.UI
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            StudendsTable.Logger=new FileLogger();
+            StudendsTable.Log = new FileLogger().Log;
+
             Application.Run(new Form1());
         }
     }

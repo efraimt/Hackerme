@@ -36,8 +36,10 @@ namespace Hackerme.UI
             this.cmbCity = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTerm = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnSearchByLast = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,30 +102,52 @@ namespace Hackerme.UI
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // textBox1
+            // txtTerm
             // 
-            this.textBox1.Location = new System.Drawing.Point(238, 514);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 7;
+            this.txtTerm.Location = new System.Drawing.Point(164, 402);
+            this.txtTerm.Name = "txtTerm";
+            this.txtTerm.Size = new System.Drawing.Size(205, 27);
+            this.txtTerm.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(369, 512);
+            this.button1.Location = new System.Drawing.Point(164, 510);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.Size = new System.Drawing.Size(203, 29);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Search";
+            this.button1.Text = "Search by First name";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnRemove
+            // 
+            this.btnRemove.Location = new System.Drawing.Point(644, 514);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(94, 29);
+            this.btnRemove.TabIndex = 9;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // btnSearchByLast
+            // 
+            this.btnSearchByLast.Location = new System.Drawing.Point(164, 465);
+            this.btnSearchByLast.Name = "btnSearchByLast";
+            this.btnSearchByLast.Size = new System.Drawing.Size(203, 29);
+            this.btnSearchByLast.TabIndex = 10;
+            this.btnSearchByLast.Text = "Search by Last name";
+            this.btnSearchByLast.UseVisualStyleBackColor = true;
+            this.btnSearchByLast.Click += new System.EventHandler(this.btnSearchByLast_Click);
             // 
             // StudentControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.btnSearchByLast);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTerm);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cmbCity);
@@ -148,7 +172,9 @@ namespace Hackerme.UI
         private System.Windows.Forms.ComboBox cmbCity;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTerm;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnSearchByLast;
     }
 }

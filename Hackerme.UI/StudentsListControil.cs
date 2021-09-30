@@ -24,6 +24,7 @@ namespace Hackerme.UI
 
         private void StudentsListControil_Load(object sender, EventArgs e)
         {
+
             dataGridView1.DataSource =  MyDB.StudendsTable.List;
         }
     }

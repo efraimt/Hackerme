@@ -44,12 +44,35 @@ namespace Hackerme.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            var list = StudendsTable.Filter(ByFirst);
             //Student = MyDB.StudendsTable.Search(txtSearchName.Text);
 
             //txtFirst.Text = Student.FirstName;
             //DateOnly.FromDateTime(dtpDOB.Value) = Student.DOB;
             //cmbCity.SelectedIndex = Student.CityId;
+        }
+
+        public bool ByLast(Student student)
+        {
+            return student.LastName.Contains(txtTerm.Text);
+        }
+
+        public bool ByFirst(Student student)
+        {
+            return student.FirstName.Contains(txtTerm.Text);
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            LogDelegate logDelegate= new LogDelegate(new ConsoleLogger().Log);
+            logDelegate += new FileLogger().Log;
+
+            StudendsTable.Remove(StudendsTable.List[0],logDelegate );
+        }
+
+        private void btnSearchByLast_Click(object sender, EventArgs e)
+        {
+            var list = StudendsTable.Filter(ByLast);
         }
     }
 }
